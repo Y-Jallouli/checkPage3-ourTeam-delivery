@@ -1,0 +1,109 @@
+.loader{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+}
+
+.teammate1{
+    border-radius: 100%;
+    width: 200px;
+  
+
+}
+.ourTeam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleOfourteam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.title{
+    font-family: comic sans ms;
+  font-size: 70px;
+
+}
+strong{
+    font-weight: 900;
+    color: rgb(199, 169, 1);
+}
+.meet{
+    font-weight: 100;
+}
+.teamFilter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    
+    font-weight: 900;
+    font-family: Trebuchet MS;
+    list-style-type: none;
+    display: inline-block;
+    padding: 3px 30px;
+    cursor: pointer;
+    
+}
+
+
+.a{
+  color: #856404; 
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-group-item{
+    border: none;
+}
+.wid{
+    width: 200px;
+    text-align: center;
+}
+
+
+
+.hovermta3team:hover{
+transform: scale(1.25);
+transition: .5s;
+border: 13px lightgrey solid;
+}
+
+.dispnone{
+    display: none;
+}
+.filterTeamnav:hover{
+    background-color: rgba(0, 0, 0, 0.733);
+    color: #fff;
+    transition: ease-in 0.15s;
+}
+.photo{
+    float: right;
+    width: 160px;
+    margin-top: -110px;
+    margin-right: -60px;
+    border-radius: 50%;
+}
+.Close{
+    justify-content: left;
+    align-items: top;
+    display: flex;
+    width: 80px;
+}
+.colorOfname{
+ color: #d68231;  
+ font-weight: 900;
+ font-family: comic sans ms;
+}
+.section{
+    height: max-content;
+}

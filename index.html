@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-------------------------------------------------Bootstrap css----------------------------------------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-------------------------------------------------Bootstrap css----------------------------------------------------->
+
+  <!-------------------------------------------------Fullpage css----------------------------------------------------->
+  <link rel="stylesheet" href="./css/fullpage css/fullpage.min.css">
+  <!-------------------------------------------------Fullpage css----------------------------------------------------->
+
+  <!-------------------------------------------------Font awesome cdn----------------------------------------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <!-------------------------------------------------Font awesome cdn----------------------------------------------------->
+
+  <!--
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+-->
+
+
+  <!-------------------------------------------------My css----------------------------------------------------->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./animation/loader/loader.css">
+  <!-------------------------------------------------My css----------------------------------------------------->
+  <title>Tawsila</title>
+</head>
+
+<body>
+
+  <!--preloadingpage-->
+  <div class="loader">
+    <div class="cssload-dots">
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+    </div>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12"></feGaussianBlur>
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo">
+          </feColorMatrix>
+          <!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
+        </filter>
+      </defs>
+    </svg>
+  </div>
+  <!--//preloadingpage-->
+
+  <div id="fullPage">
+    <div class="section" style="background-color: blue;">
+      <h1>yo first page</h1>
+    </div>
+    <div class="section">
+      <h1>yo second page</h1>
+    </div>
+
+    <div class="section container-fluid">
+      <div class="pb-5 row">
+        <div class="titleOfourteam col-12">
+          <h2><span class="title" class="meet">Meet the </span><strong class="title">team.</strong></h2>
+        </div>
+
+      </div>
+      <ul class="list-group filter  list-group-horizontal-lg">
+        <li onclick="return filter('all')" class="filterTeamnav list-group-item wid list-group-item-warning">ALL</li>
+        <li onclick="return filter('DRIVERS')" class="filterTeamnav list-group-item wid list-group-item-warning">DRIVERS
+        </li>
+        <li onclick="return filter('LEADERSHIP')"
+          class="filterTeamnav thenya list-group-item wid list-group-item-warning">LEADERSHIP
+        </li>
+        <li onclick="return filter('DEVELOPMENT')" class="filterTeamnav list-group-item wid list-group-item-warning">
+          DEVELOPMENT</li>
+        <li onclick="return filter('CLIENTSERVICES')" class="filterTeamnav list-group-item wid list-group-item-warning">
+          CLIENT
+          SERVICES</li>
+        <li onclick="return filter('STRATEGY')" class="filterTeamnav list-group-item wid list-group-item-warning">
+          STRATEGY</li>
+
+      </ul>
+
+      <!-- Button trigger modal -->
+      <!--
+        <div class="card teammate1" style="width: 18rem;">
+          <img class="teammate1" src="./medias/yassine.jpg" style="width: 100%;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">YASSINE JALLOULI</p>
+          </div>
+        </div>
+      -->
+      <div class="ourTeam row pt-5">
+        <div class="col-lg-2 STRATEGY mydiv col-md-4 col-6">
+          <a type="button" class="btn" data-toggle="modal" data-target="#teammate1">
+            <img src="./medias/ala.jpg" class="teammate1 hovermta3team" alt="">
+          </a>
+        </div>
+        <div class="col-lg-2 LEADERSHIP DEVELOPMENT mydiv col-md-4 col-6">
+          <a type="button" class="btn" data-toggle="modal" data-target="#teammate2">
+            <img src="./medias/yassine.jpg" class="teammate1 hovermta3team" alt="">
+          </a>
+        </div>
+        <div class="col-lg-2 mydiv DRIVERS col-md-4 col-6">
+          <a type="button" class="btn" data-toggle="modal" data-target="#teammate3">
+            <img src="./medias/ghorbel.jpg" class="teammate1  hovermta3team" alt="">
+          </a>
+        </div>
+        <div class="col-lg-2 CLIENTSERVICES mydiv col-md-4 col-6">
+          <a type="button" class="btn" data-toggle="modal" data-target="#teammate4">
+            <img src="./medias/monta.jpg" class="teammate1  hovermta3team" alt="">
+          </a>
+        </div>
+        <div class="col-lg-2 LEADERSHIP DEVELOPMENT  mydiv col-md-4 col-6">
+          <a type="button" class="btn" data-toggle="modal" data-target="#teammate5">
+            <img src="./medias/nabil.jpg" class="teammate1  hovermta3team" alt="">
+          </a>
+
+        </div>
+        <div class="col-lg-2 mydiv LEADERSHIP col-md-4 col-6">
+          <a type="button" class="btn" data-toggle="modal" data-target="#teammate6">
+            <img src="./medias/zokomberek.jpg" class="teammate1  hovermta3team" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- Modal 1-->
+
+  <div class="modal fade" id="teammate1" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="Close">
+          <button type="button" class="btn btn-danger" style="width: 50%;" data-dismiss="modal">X</button>
+        </div>
+
+     
+          <h5 class="modal-title colorOfname" style="padding-left: 20%;" id="staticBackdropLabel">A.D.TOUAIBI</h5>
+  
+        <div class="modal-body">
+          <img class="photo" src="./medias/ala.jpg" alt="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nobis omnis, deserunt dolore natus neque eos
+          quibusdam aspernatur? Repudiandae ad, illum quia dolorem odit ducimus aliquam eligendi esse ullam fuga!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum suscipit ratione sed maxime odio repudiandae
+          voluptatem quisquam rerum hic eos animi reprehenderit natus nesciunt laboriosam accusantium, quo minima, culpa
+          aut.
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 2-->
+  <div class="modal fade" id="teammate2" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="Close">
+          <button type="button" class="btn btn-danger" style="width: 50%;" data-dismiss="modal">X</button>
+        </div>
+
+     
+          <h5 class="modal-title colorOfname" style="padding-left: 20%;" id="staticBackdropLabel">YASSINE JALLOULI</h5>
+  
+        <div class="modal-body">
+          <img class="photo" src="./medias/yassine.jpg" alt="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nobis omnis, deserunt dolore natus neque eos
+          quibusdam aspernatur? Repudiandae ad, illum quia dolorem odit ducimus aliquam eligendi esse ullam fuga!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum suscipit ratione sed maxime odio repudiandae
+          voluptatem quisquam rerum hic eos animi reprehenderit natus nesciunt laboriosam accusantium, quo minima, culpa
+          aut.
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal 3-->
+  <div class="modal fade" id="teammate3" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="Close">
+          <button type="button" class="btn btn-danger" style="width: 50%;" data-dismiss="modal">X</button>
+        </div>
+
+     
+          <h5 class="modal-title colorOfname" style="padding-left: 20%;" id="staticBackdropLabel">M.A.BOUGHORBEL</h5>
+  
+        <div class="modal-body">
+          <img class="photo" src="./medias/ghorbel.jpg" alt="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nobis omnis, deserunt dolore natus neque eos
+          quibusdam aspernatur? Repudiandae ad, illum quia dolorem odit ducimus aliquam eligendi esse ullam fuga!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum suscipit ratione sed maxime odio repudiandae
+          voluptatem quisquam rerum hic eos animi reprehenderit natus nesciunt laboriosam accusantium, quo minima, culpa
+          aut.
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 4-->
+  <div class="modal fade" id="teammate4" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="Close">
+          <button type="button" class="btn btn-danger" style="width: 50%;" data-dismiss="modal">X</button>
+        </div>
+
+     
+          <h5 class="modal-title colorOfname" style="padding-left: 20%;" id="staticBackdropLabel">M.BOUGADDOUHA</h5>
+  
+        <div class="modal-body">
+          <img class="photo" src="./medias/monta.jpg" alt="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nobis omnis, deserunt dolore natus neque eos
+          quibusdam aspernatur? Repudiandae ad, illum quia dolorem odit ducimus aliquam eligendi esse ullam fuga!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum suscipit ratione sed maxime odio repudiandae
+          voluptatem quisquam rerum hic eos animi reprehenderit natus nesciunt laboriosam accusantium, quo minima, culpa
+          aut.
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 5-->
+  <div class="modal fade" id="teammate5" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="Close">
+          <button type="button" class="btn btn-danger" style="width: 50%;" data-dismiss="modal">X</button>
+        </div>
+
+     
+          <h5 class="modal-title colorOfname" style="padding-left: 20%;" id="staticBackdropLabel">NABIL MERSNI</h5>
+  
+        <div class="modal-body">
+          <img class="photo" src="./medias/nabil.jpg" alt="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nobis omnis, deserunt dolore natus neque eos
+          quibusdam aspernatur? Repudiandae ad, illum quia dolorem odit ducimus aliquam eligendi esse ullam fuga!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum suscipit ratione sed maxime odio repudiandae
+          voluptatem quisquam rerum hic eos animi reprehenderit natus nesciunt laboriosam accusantium, quo minima, culpa
+          aut.
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 6-->
+  <div class="modal fade" id="teammate6" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="Close">
+          <button type="button" class="btn btn-danger" style="width: 50%;" data-dismiss="modal">X</button>
+        </div>
+
+     
+          <h5 class="modal-title colorOfname" style="padding-left: 20%;" id="staticBackdropLabel">M.ZUCKERBERG</h5>
+  
+        <div class="modal-body">
+          <img class="photo" src="./medias/zokomberek.jpg" alt="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nobis omnis, deserunt dolore natus neque eos
+          quibusdam aspernatur? Repudiandae ad, illum quia dolorem odit ducimus aliquam eligendi esse ullam fuga!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum suscipit ratione sed maxime odio repudiandae
+          voluptatem quisquam rerum hic eos animi reprehenderit natus nesciunt laboriosam accusantium, quo minima, culpa
+          aut.
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-------------------------------------------------Full page js----------------------------------------------------->
+  <script src="./js/fullpage js/fullpage.min.js"></script>
+  <!-------------------------------------------------Full page js----------------------------------------------------->
+
+
+  <!-------------------------------------------------Jquery cdn----------------------------------------------------->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+    </script>
+  <!-------------------------------------------------Jquery cdn----------------------------------------------------->
+
+  <!-------------------------------------------------My js----------------------------------------------------->
+  <script src="./js/index.js"></script>
+  <!-------------------------------------------------My js----------------------------------------------------->
+
+  <!-------------------------------------------------Bootstrap js----------------------------------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-------------------------------------------------Bootstrap js----------------------------------------------------->
+</body>
+
+</html>
